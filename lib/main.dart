@@ -1,5 +1,7 @@
 import 'package:flutter_web/material.dart';
 
+import './widgets/task.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -38,20 +40,21 @@ class MyWebsite extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Text(
-                'Welcome to Flutter For Web',
-                style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-              ),
-            ),
-          ],
-        ),
-      ),
+      body: Center(child: Task()
+
+          // Column(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   children: <Widget>[
+          //     // Padding(
+          //     //   padding: const EdgeInsets.all(20.0),
+          //     //   child: Text(
+          //     //     'Welcome to Flutter For Web',
+          //     //     style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+          //     //   ),
+          //     // ),
+          //   ],
+          // ),
+          ),
     );
   }
 }
