@@ -10,10 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MyApp - Flutter For Web',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-        fontFamily: 'RobotoMono'
-      ),
+      theme: ThemeData(primarySwatch: Colors.teal, fontFamily: 'RobotoMono'),
       home: MyWebsite(),
     );
   }
@@ -41,21 +38,14 @@ class MyWebsite extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(child: TaskItem()
-
-          // Column(
-          //   mainAxisAlignment: MainAxisAlignment.center,
-          //   children: <Widget>[
-          //     // Padding(
-          //     //   padding: const EdgeInsets.all(20.0),
-          //     //   child: Text(
-          //     //     'Welcome to Flutter For Web',
-          //     //     style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-          //     //   ),
-          //     // ),
-          //   ],
-          // ),
-          ),
+      body: Center(
+        child: ListView(
+          children: <Widget>[
+            TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),TaskItem(),
+          ],
+        ),
+        // ),
+      ),
     );
   }
 }
