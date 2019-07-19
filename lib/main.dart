@@ -1,6 +1,6 @@
 import 'package:flutter_web/material.dart';
 
-import './widgets/task.dart';
+import './widgets/task_item.dart';
 
 void main() => runApp(MyApp());
 
@@ -41,7 +41,7 @@ class MyWebsite extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(child: Task()
+      body: Center(child: TaskItem()
 
           // Column(
           //   mainAxisAlignment: MainAxisAlignment.center,
