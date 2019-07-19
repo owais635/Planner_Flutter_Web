@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.teal,
+        fontFamily: 'RobotoMono'
       ),
       home: MyWebsite(),
     );
