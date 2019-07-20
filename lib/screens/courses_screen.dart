@@ -1,6 +1,7 @@
 import 'package:flutter_web/material.dart';
 
 import '../widgets/app_drawer.dart';
+import '../widgets/course_item.dart';
 
 class CoursesScreen extends StatelessWidget {
   @override
@@ -11,6 +12,6 @@ class CoursesScreen extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: AppDrawer(),
-        body: Text("Courses Comming Soon........."));
+        body: Center(child: CourseItem()));
   }
 }

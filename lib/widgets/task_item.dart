@@ -1,5 +1,7 @@
 import 'package:flutter_web/material.dart';
 
+import '../utils.dart';
+
 class TaskItem extends StatelessWidget {
   final String name = 'Task Name';
   final String course = "CSC100";
@@ -10,16 +12,6 @@ class TaskItem extends StatelessWidget {
   final courseColor = "#4287f5";
 
   static final rowPadding = EdgeInsets.only(bottom: 3, right: 4, left: 4);
-
-  // No native way to use hex colours.
-  // https://stackoverflow.com/a/53905427
-  static convertHexColour(String hexColor) {
-    hexColor = hexColor.toUpperCase().replaceAll("#", "");
-    if (hexColor.length == 6) {
-      hexColor = "FF" + hexColor;
-    }
-    return Color(int.parse(hexColor, radix: 16));
-  }
 
   Widget build(BuildContext context) {
     return Padding(
