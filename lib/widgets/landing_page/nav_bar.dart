@@ -1,5 +1,8 @@
 import 'package:flutter_web/material.dart';
 
+// import 'dart:html' as html;
+// FlatButton(child: Text("click me"), onPressed: (){html.window.open("https://www.google.com","google");},)
+
 class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,9 +19,7 @@ class NavBar extends StatelessWidget {
               //   width: 100,
               // ),
 
-              Text("Planner",
-                  style:
-                      TextStyle(fontSize: 30))
+              Text("Planner", style: TextStyle(fontSize: 30))
             ],
           ),
           InkWell(
@@ -35,13 +36,13 @@ class NavBar extends StatelessWidget {
               child: Center(
                 child: Text("Login",
                     style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        // letterSpacing: 1,
-                      )),
+                      color: Colors.white,
+                      fontSize: 18,
+                      // letterSpacing: 1,
+                    )),
               ),
             ),
-          ))
+          )),
         ],
       ),
     );
