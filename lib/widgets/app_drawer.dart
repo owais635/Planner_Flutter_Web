@@ -14,7 +14,7 @@ class AppDrawer extends StatelessWidget {
         children: <Widget>[
           ListTile(
               title: Text("Tasks"),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: Icon(Icons.format_list_bulleted),
               onTap: () {
                 Navigator.push(
                   context,
@@ -23,7 +23,7 @@ class AppDrawer extends StatelessWidget {
               }),
           ListTile(
               title: Text("Courses"),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: Icon(Icons.book),
               onTap: () {
                 Navigator.push(
                   context,
@@ -32,7 +32,7 @@ class AppDrawer extends StatelessWidget {
               }),
           ListTile(
               title: Text("Types"),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: Icon(Icons.folder),
               onTap: () {
                 Navigator.push(
                   context,
