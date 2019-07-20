@@ -31,8 +31,11 @@ class CreateTaskScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text('Create Task'),
           centerTitle: true,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back, color: Colors.white),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
         ),
-        drawer: AppDrawer(),
         body: Padding(
             padding: EdgeInsets.all(16),
             child: Form(
