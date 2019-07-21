@@ -64,31 +64,25 @@ class LargeChild extends StatelessWidget {
                   child: Stack(
                     fit: StackFit.expand,
                     children: <Widget>[
-                      FractionallySizedBox(
-                        alignment: Alignment.centerLeft,
-                        widthFactor: .6,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Text("Homework, Agenda & Notes",
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text("Homework, Agenda & Notes",
+                              style: TextStyle(
+                                  fontSize: 50,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: "Montserrat-Regular",
+                                  color: Color(0xFF8591B0))),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 12.0, top: 20),
+                            child: Text("Simple Homework & Notes managing app.",
                                 style: TextStyle(
-                                    fontSize: 60,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "Montserrat-Regular",
-                                    color: Color(0xFF8591B0))),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 12.0, top: 20),
-                              child:
-                                  Text("Simple Homework & Notes managing app.",
-                                      style: TextStyle(
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold,
-                                      )),
-                            ),
-                          ],
-                        ),
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                          ),
+                        ],
                       ),
                     ],
                   )),
