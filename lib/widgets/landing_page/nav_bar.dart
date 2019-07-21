@@ -1,7 +1,6 @@
 import 'package:flutter_web/material.dart';
 
-// import 'dart:html' as html;
-// FlatButton(child: Text("click me"), onPressed: (){html.window.open("https://www.google.com","google");},)
+import '../../screens/tasks_screen.dart';
 
 class NavBar extends StatelessWidget {
   @override
@@ -25,26 +24,32 @@ class NavBar extends StatelessWidget {
             ],
           ),
           InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TasksScreen()),
+                );
+              },
               child: Container(
-            margin: EdgeInsets.only(left: 20),
-            width: 80,
-            height: 40,
-            decoration: BoxDecoration(
-              color: Colors.deepPurple,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Material(
-              color: Colors.transparent,
-              child: Center(
-                child: Text("Login",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                      // letterSpacing: 1,
-                    )),
-              ),
-            ),
-          )),
+                margin: EdgeInsets.only(left: 20),
+                width: 80,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: Colors.deepPurple,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Material(
+                  color: Colors.transparent,
+                  child: Center(
+                    child: Text("Login",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          // letterSpacing: 1,
+                        )),
+                  ),
+                ),
+              )),
         ],
       ),
     );

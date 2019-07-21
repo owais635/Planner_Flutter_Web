@@ -1,12 +1,10 @@
 import 'package:flutter_web/material.dart';
 
 import '../widgets/landing_page/nav_bar.dart';
+import '../widgets/type_item.dart';
 
 import '../utils/responsiveLayout.dart';
 import '../utils/utils.dart';
-
-import '../widgets/type_item.dart';
-import '../widgets/task_item.dart';
 
 import 'dart:html' as html;
 
