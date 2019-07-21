@@ -13,13 +13,15 @@ class NavBar extends StatelessWidget {
         children: <Widget>[
           Row(
             children: <Widget>[
-              //icon
-
-              // SizedBox(
-              //   width: 100,
-              // ),
-
-              Text("Planner", style: TextStyle(fontSize: 30))
+              Image.network(
+                "assets/images/logo.png",
+                height: 40,
+                width: 40,
+              ),
+              SizedBox(
+                width: 8,
+              ),
+              Text("Planner", style: TextStyle(fontSize: 35))
             ],
           ),
           InkWell(

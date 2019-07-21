@@ -1,6 +1,6 @@
 import 'package:flutter_web/material.dart';
 
-import '../utils.dart';
+import '../utils/utils.dart';
 
 class TaskItem extends StatelessWidget {
   final String name = 'Task Name';

@@ -1,6 +1,6 @@
 import 'package:flutter_web/material.dart';
 
-import '../utils.dart';
+import '../utils/utils.dart';
 
 class CourseItem extends StatelessWidget {
   static final String courseName = "Intro to Computer Sceience";
