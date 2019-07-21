@@ -27,7 +27,7 @@ class NavBar extends StatelessWidget {
           InkWell(
               child: Container(
             margin: EdgeInsets.only(left: 20),
-            width: 120,
+            width: 80,
             height: 40,
             decoration: BoxDecoration(
               color: Colors.deepPurple,
